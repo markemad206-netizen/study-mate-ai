@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyMate AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span>✦</span> StudyMate AI</div>
+      <button id="newChat" class="new-chat">+ New chat</button>
+      <div class="side-section">
+        <p class="muted">YOUR SUBJECT</p>
+        <select id="subject">
+          <option>General</option>
+          <option>Math</option>
+          <option>English</option>
+          <option>Arabic</option>
+          <option>Science</option>
+          <option>Programming</option>
+        </select>
+      </div>
+      <div class="side-section">
+        <p class="muted">QUICK ACTIONS</p>
+        <button class="quick" data-prompt="Explain this topic in simple steps">Explain a topic</button>
+        <button class="quick" data-prompt="Create a short quiz for me">Generate a quiz</button>
+        <button class="quick" data-prompt="Give me a study plan for today">Make a study plan</button>
+      </div>
+      <div class="sidebar-footer">Built for curious learners 🚀</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">AI LEARNING SPACE</p>
+          <h1>Learn something new.</h1>
+        </div>
+        <button id="themeToggle" class="icon-button" title="Toggle theme">☾</button>
+      </header>
+
+      <section id="chat" class="chat">
+        <div class="welcome">
+          <div class="orb">✦</div>
+          <h2>Hey! I'm your study assistant.</h2>
+          <p>Ask me a question, request an explanation, or generate a practice quiz.</p>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="Explain photosynthesis for a beginner">🌱 Explain photosynthesis</button>
+            <button class="suggestion" data-prompt="Give me 5 easy Python questions">🐍 Practice Python</button>
+            <button class="suggestion" data-prompt="Explain fractions with examples">➗ Learn fractions</button>
+          </div>
+        </div>
+      </section>
+
+      <form id="chatForm" class="composer">
+        <textarea id="message" rows="1" placeholder="Ask anything about your studies..." required></textarea>
+        <button type="submit" class="send">➤</button>
+      </form>
+      <p class="disclaimer">StudyMate AI can make mistakes. Check important answers with a trusted source or teacher.</p>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
