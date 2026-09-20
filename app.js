@@ -2,7 +2,7 @@ const chat = document.querySelector("#chat");
 const form = document.querySelector("#chatForm");
 const messageInput = document.querySelector("#message");
 const subject = document.querySelector("#subject");
-const API_URL = "http://127.0.0.1:8000/api/chat";
+const API_URL = "/api/chat";
 
 function addMessage(text, role = "assistant") {
   const row = document.createElement("div");
